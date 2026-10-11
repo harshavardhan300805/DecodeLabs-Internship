@@ -1,0 +1,16 @@
+{
+  "name": "decodelabs-blockchain-project-2",
+  "version": "1.0.0",
+  "description": "DecodeLabs Project 2 - Decentralized Voting System with Solidity smart contracts",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "demo": "hardhat run scripts/demo.js",
+    "deploy:local": "hardhat run scripts/deploy.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.17"
+  }
+}
