@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.container {
+  width: min(680px, 92%);
+  margin: 40px auto;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #6b7280;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 16px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.secondary {
+  margin-top: 10px;
+}
+
+.balance-box {
+  display: grid;
+  gap: 7px;
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  overflow-wrap: anywhere;
+}
+
+.balance-box span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 28px 0;
+}
+
+.message {
+  margin-top: 18px;
+  min-height: 22px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+#txLink {
+  display: block;
+  margin-top: 10px;
+  overflow-wrap: anywhere;
+}

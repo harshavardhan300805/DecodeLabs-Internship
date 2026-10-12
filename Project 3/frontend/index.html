@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 3 | ERC-20 Token Wallet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>ERC-20 Token Wallet</h1>
+      <p class="subtitle">Blockchain Technology – Project 3</p>
+
+      <button id="connectBtn">Connect Wallet</button>
+      <p id="walletStatus">Wallet not connected.</p>
+
+      <label for="tokenAddress">Token Contract Address</label>
+      <input id="tokenAddress" type="text" placeholder="0x...">
+      <button id="loadTokenBtn" class="secondary">Load Token</button>
+
+      <div class="balance-box">
+        <span>Connected Account</span>
+        <strong id="account">—</strong>
+        <span>Token Balance</span>
+        <strong id="balance">—</strong>
+      </div>
+
+      <hr>
+
+      <h2>Transfer Tokens</h2>
+
+      <label for="recipient">Recipient Address</label>
+      <input id="recipient" type="text" placeholder="0x...">
+
+      <label for="amount">Amount</label>
+      <input id="amount" type="number" min="0" step="any" placeholder="e.g. 25">
+
+      <button id="transferBtn">Transfer Tokens</button>
+
+      <div id="message" class="message"></div>
+      <a id="txLink" target="_blank" rel="noopener noreferrer"></a>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
