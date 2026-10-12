@@ -1,0 +1,15 @@
+{
+  "name": "DecodeLabs Project 4 NFT",
+  "description": "A unique ERC-721 digital asset created for Blockchain Technology Project 4.",
+  "image": "sample-nft.svg",
+  "attributes": [
+    {
+      "trait_type": "Project",
+      "value": "Blockchain Technology Project 4"
+    },
+    {
+      "trait_type": "Standard",
+      "value": "ERC-721"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 4 NFT Wallet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Project 4: NFT Minting</h1>
+      <p class="subtitle">ERC-721 Non-Fungible Token with Metadata</p>
+
+      <button id="connectBtn">Connect Wallet</button>
+      <p id="walletStatus">Wallet not connected.</p>
+
+      <label for="contractAddress">NFT Contract Address</label>
+      <div class="row">
+        <input id="contractAddress" type="text" placeholder="Paste deployed contract address">
+        <button id="loadBtn">Load NFT Contract</button>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <span>Connected Account</span>
+          <strong id="account">—</strong>
+        </div>
+        <div class="info-box">
+          <span>Contract</span>
+          <strong id="contractStatus">Not loaded</strong>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2>Mint Unique NFT</h2>
+
+      <label for="metadataURI">Metadata URI / File Path</label>
+      <input id="metadataURI" type="text" value="metadata/nft-1.json">
+
+      <button id="mintBtn" class="primary">Mint NFT</button>
+
+      <p id="message" class="message"></p>
+
+      <section id="result" class="result hidden">
+        <h2>Ownership & Metadata</h2>
+
+        <div class="result-row">
+          <span>Token ID</span>
+          <strong id="tokenId">—</strong>
+        </div>
+
+        <div class="result-row">
+          <span>Owner</span>
+          <strong id="owner">—</strong>
+        </div>
+
+        <div class="result-row">
+          <span>Token URI</span>
+          <strong id="tokenURI">—</strong>
+        </div>
+
+        <div class="metadata">
+          <h3>Off-chain Metadata</h3>
+          <p><strong>Name:</strong> <span id="metadataName">—</span></p>
+          <p><strong>Description:</strong> <span id="metadataDescription">—</span></p>
+          <p><strong>Asset:</strong> <span id="metadataImage">—</span></p>
+        </div>
+
+        <p id="txHash"></p>
+      </section>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
